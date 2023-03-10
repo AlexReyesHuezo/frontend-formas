@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>¿Cuál de los 3 números es mayor?</title>
+  </head>
+  <body>
+    <script>
+      let primerNumero = Number(prompt("Ingresa el primer número"));
+      let segundoNumero = Number(prompt("Ingresa el segundo número"));
+      let tercerNumero = Number(prompt("Ingresa el tercer número"));
+
+      if (primerNumero > segundoNumero && primerNumero > tercerNumero) {
+        alert(
+          `El ${primerNumero} es mayor que el ${segundoNumero} y el ${tercerNumero}`
+        );
+      } else if (segundoNumero > primerNumero && segundoNumero > tercerNumero) {
+        alert(
+          `El ${segundoNumero} es mayor que el ${primerNumero} y el ${tercerNumero}`
+        );
+      } else if (tercerNumero > primerNumero && tercerNumero > segundoNumero) {
+        alert(
+          `El ${tercerNumero} es mayor que el ${primerNumero} y el ${segundoNumero}`
+        );
+      } else {
+        alert("Los números son iguales");
+      }
+    </script>
+  </body>
+</html>

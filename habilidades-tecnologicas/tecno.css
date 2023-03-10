@@ -1,5 +1,28 @@
 body {
   font-family: 'Mitr', sans-serif;
+  font-weight: 100;
+  color: rgb(45, 0, 79);
+}
+
+strong a {
+  color: black;
+}
+
+section {
+  display:grid;
+  justify-items: center;
+}
+
+section h2 {
+  text-align: center;
+}
+
+section > article {
+  width: 80%;
+}
+
+h1 {
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -7,25 +30,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 pre {
+  width: 80%;
   white-space: pre-wrap;
+  border-radius: 10px;
 }
 
-.tecno {
+code {
+  font-family: 'Red Hat Mono', monospace;
+  font-weight: 600;
+}
+
+section:nth-child(odd) {
   background-color: cadetblue;
 }
 
-.web {
+section:nth-child(even) {
   background-color: royalblue;
 }
 
-.vainilla {
-  background-color: cadetblue;
+.grafico-web {
+  background-color: #ffffff20;
+  padding: 10px;
+  text-align: center;
+  
 }
 
-.jquery {
-  background-color: royalblue;
-}
-
-.react {
-  background-color: cadetblue;
+.grafico-web > img {
+  width: 100%;
 }

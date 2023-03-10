@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Año bisiesto</title>
+  </head>
+  <body>
+    <script>
+      let anio = Number(prompt("Ingresa un año"));
+
+      (anio % 4 == 0 && anio % 100 != 0) || anio % 400 == 0
+        ? alert(`El ${anio} es bisiesto`)
+        : alert(`El ${anio} no es bisiesto`);
+    </script>
+  </body>
+</html>
