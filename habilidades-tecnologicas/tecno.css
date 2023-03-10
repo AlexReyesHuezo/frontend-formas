@@ -1,0 +1,31 @@
+body {
+  font-family: 'Mitr', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.tecno {
+  background-color: cadetblue;
+}
+
+.web {
+  background-color: royalblue;
+}
+
+.vainilla {
+  background-color: cadetblue;
+}
+
+.jquery {
+  background-color: royalblue;
+}
+
+.react {
+  background-color: cadetblue;
+}
