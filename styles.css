@@ -1,0 +1,34 @@
+body {
+  /* max-width: 900px; */
+  font-family: 'Mitr', sans-serif;
+
+}
+
+.titular {
+  display: grid;
+  place-content: center;
+}
+
+.hero {
+  display: grid;
+  place-content: center;
+  /* background-image: url(./poster-frontend.png); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.hero img {
+  width: 100%;
+  border: 10px solid #000;
+}
+
+.hero figcaption {
+  text-align: center;
+}
+
+figcaption span {
+  color: steelblue;
+  font-weight: bold;
+}
