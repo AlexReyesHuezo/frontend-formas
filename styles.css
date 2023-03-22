@@ -1,34 +1,41 @@
 body {
   /* max-width: 900px; */
   font-family: 'Mitr', sans-serif;
-
+  background-image: linear-gradient(135deg, #FFD26F 10%, #3677FF 100%);
 }
 
 .titular {
   display: grid;
-  place-content: center;
+  justify-items: center;
 }
 
 .hero {
   display: grid;
   place-content: center;
-  /* background-image: url(./poster-frontend.png); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-color: #ffffff20;
+  padding: 10px;
+  text-align: center;
 }
 
 .hero img {
   width: 100%;
-  border: 10px solid #000;
-}
-
-.hero figcaption {
-  text-align: center;
 }
 
 figcaption span {
   color: steelblue;
   font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  background-color: #3677FF;
+  padding: 6px 12px;
+  border-radius: 6px;
 }

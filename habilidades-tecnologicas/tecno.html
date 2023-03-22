@@ -15,8 +15,8 @@
     <header></header>
     <main>
       <h1>Habilidades tecnológicas</h1>
-      <section class="tecno">
-        <article>
+      <article class="tecno">
+        <section>
           <p>
             Las habilidades tecnológicas son todas las aptitudes y conocimientos,
             principalmente técnicos, que te permiten realizar tareas específicas
@@ -36,13 +36,13 @@
             Las habilidades tecnológicas que nos incumben en este caso son las
             relacionadas al desarrollo web, en especial el frontend.
           </p>
-        </article>
-      </section>
+        </section>
+      </article>
 
-      <section class="web">
+      <article class="web">
         <h2>Desarrollo web</h2>
 
-        <article>
+        <section>
           <figure class="grafico-web">
             <img src="./img/desarrollo-web.png" alt="El desarrollo web se suele dividr entre frontend y backend">
             <figcaption>
@@ -63,9 +63,9 @@
             que sabes todo a profundidad, sino sabes de ambos mundos, pero te
             especializas en frontend o backend.
           </p>
-        </article>
+        </section>
 
-        <article>
+        <section>
           <h3>Desarrollo web frontend</h3>
           <img src="https://img.icons8.com/color/48/null/html-5--v1.png" />
           <img src="https://img.icons8.com/color/48/null/css3.png" />
@@ -85,14 +85,14 @@
             respuestas a APIs o backends, conocer de CMS, accesibilidad, pruebas
             y entrega continua, etcétera.
           </p>
-        </article>
+        </section>
 
-      </section>
+      </article>
       
-      <section class="vainilla">
+      <article class="vainilla">
         <h2>Esenciales de JavaScript</h2>
 
-        <article>
+        <section>
           <h3>JavaScript</h3>
           <p>
             JavaScript, usualmente abreviado JS es un lenguaje de programación
@@ -119,9 +119,9 @@
             que agrega tipado estático y otras características, que luego
             transpila a JS.
           </p>
-        </article>
+        </section>
 
-        <article>
+        <section>
           <h3>Variables</h3>
           <p>
             Es el nombre genérico que se le da a pequeños espacios de memoria donde guardas una información determinada, de forma muy similar a las incógnitas en matemáticas. Un programa puede tener muchas variables, y cada una de ellas tendrá un nombre, un valor y un tipo de dato. El nombre se utiliza para diferenciarlas unas de otras y hacer referencia a ellas, el valor es la información que contienen y el tipo de dato es la naturaleza de ese valor. Se llaman variables porque podemos cambiarle su valor a lo largo del programa, según necesitemos.
@@ -135,49 +135,277 @@
 
           <pre>
 <code class="language-javascript line-numbers">let foo;
-const bar;
+const bar = 100;
 
-let art = item => document.write(`${item}` numero foo);</code></pre>
-        </article>
+foo = "🏋🏻‍♀️";
 
-        <article>
+console.log(`Haz ${bar} ${foo}`);</code></pre>
+        </section>
+
+        <section>
           <h3>Operadores</h3>
-        </article>
+          <section>
+            <h4>Operadores aritméticos</h4>
+            <p>
+              Los operadores aritméticos toman valores numéricos (ya sean literales o variables) como sus operandos y devuelven un solo valor numérico.
+              <table>
+                <thead>
+                  <tr>
+                    <th>Operador</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                    <th>Resultado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>+</td>
+                    <td>Suma</td>
+                    <td><code>3 + 4</code></td>
+                    <td><code>7</code></td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>Resta</td>
+                    <td><code>3 - 4</code></td>
+                    <td><code>-1</code></td>
+                  </tr>
+                  <tr>
+                    <td>*</td>
+                    <td>Multiplicación</td>
+                    <td><code>3 * 4</code></td>
+                    <td><code>12</code></td>
+                  </tr>
+                  <tr>
+                    <td>/</td>
+                    <td>División</td>
+                    <td><code>3 / 4</code></td>
+                    <td><code>0.75</code></td>
+                  </tr>
+                  <tr>
+                    <td>%</td>
+                    <td>Módulo</td>
+                    <td><code>3 % 4</code></td>
+                    <td><code>3</code></td>
+                  </tr>
+                  <tr>
+                    <td>**</td>
+                    <td>Exponenciación</td>
+                    <td><code>3 ** 4</code></td>
+                    <td><code>81</code></td>
+                  </tr>
+                  <tr>
+                    <td>++</td>
+                    <td>Incremento</td>
+                    <td><code>let a = 3; a++;</code></td>
+                    <td><code>4</code></td>
+                  </tr>
+                  <tr>
+                  <tr>
+                    <td>--</td>
+                    <td>Decremento</td>
+                    <td><code>let a = 3; a--;</code></td>
+                    <td><code>2</code></td>
+                  </tr>
+              </table>
+            </p>
+          </section>
 
-        <article>
+          <section>
+            <h4>Operadores lógicos</h4>
+            <p>
+              Los operadores lógicos se utilizan normalmente con valores booleanos (lógicos); cuando lo son, devuelven un valor booleano.
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Operador</th>
+                  <th>Descripción</th>
+                  <th>Ejemplo</th>
+                  <th>Resultado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>&&</td>
+                  <td>AND</td>
+                  <td><code>true && true</code></td>
+                  <td><code>true</code></td>
+                </tr>
+                <tr>
+                  <td>||</td>
+                  <td>OR</td>
+                  <td><code>true || false</code></td>
+                  <td><code>true</code></td>
+                </tr>
+                <tr>
+                  <td>!</td>
+                  <td>NOT</td>
+                  <td><code>!true</code></td>
+                  <td><code>false</code></td>
+                </tr>
+            </table>
+          </section>
+
+          <section>
+            <h4>Operadores de asignación</h4>
+            <p>
+              Un operador de asignación asigna un valor a su operando izquierdo basándose en el valor de su operando derecho.
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Operador</th>
+                  <th>Descripción</th>
+                  <th>Ejemplo</th>
+                  <th>Resultado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>=</td>
+                  <td>Asignación</td>
+                  <td><code>x = y</code></td>
+                  <td><code>x = y</code></td>
+                </tr>
+                <tr>
+                  <td>+=</td>
+                  <td>Asignación con adición</td>
+                  <td><code>x += y</code></td>
+                  <td><code>x = x + y</code></td>
+                </tr>
+                <tr>
+                  <td>-=</td>
+                  <td>Asignación con sustracción</td>
+                  <td><code>x -= y</code></td>
+                  <td><code>x = x - y</code></td>
+                </tr>
+                <tr>
+                  <td>*=</td>
+                  <td>Asignación con multiplicación</td>
+                  <td><code>x *= y</code></td>
+                  <td><code>x = x * y</code></td>
+                </tr>
+                <tr>
+                  <td>/=</td>
+                  <td>Asignación con división</td>
+                  <td><code>x /= y</code></td>
+                  <td><code>x = x / y</code></td>
+                </tr>
+                <tr>
+                  <td>%=</td>
+                  <td>Asignación con módulo</td>
+                  <td><code>x %= y</code></td>
+                  <td><code>x = x % y</code></td>
+                </tr>
+                <tr>
+                  <td>**=</td>
+                  <td>Asignación con exponenciación</td>
+                  <td><code>x **= y</code></td>
+                  <td><code>x = x ** y</code></td>
+                </tr>
+            </table>
+          </section>
+
+          <section>
+            <h4>Operadores de igualdad</h4>
+            <p>El resultado de evaluar un operador de igualdad siempre es de tipo Boolean basado en si la comparación es verdadera.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Operador</th>
+                  <th>Descripción</th>
+                  <th>Ejemplo</th>
+                  <th>Resultado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>==</td>
+                  <td>Igualdad</td>
+                  <td><code>3 == var1</code></td>
+                  <td><code>false</code></td>
+                </tr>
+                <tr>
+                  <td>===</td>
+                  <td>Igualdad estricta</td>
+                  <td><code>3 === var1</code></td>
+                  <td><code>false</code></td>
+                </tr>
+                <tr>
+                  <td>!=</td>
+                  <td>Diferencia</td>
+                  <td><code>3 != var1</code></td>
+                  <td><code>true</code></td>
+                </tr>
+                <tr>
+                  <td>!==</td>
+                  <td>Diferencia estricta</td>
+                  <td><code>3 !== var1</code></td>
+                  <td><code>true</code></td>
+                </tr>
+                <tr>
+                  <td>&gt;</td>
+                  <td>Mayor que</td>
+                  <td><code>var2 &gt; var1</code></td>
+                  <td><code>true</code></td>
+                </tr>
+                <tr>
+                  <td>&lt;</td>
+                  <td>Menor que</td>
+                  <td><code>var1 &lt; var2</code></td>
+                  <td><code>true</code></td>
+                </tr>
+                <tr>
+                  <td>&gt;=</td>
+                  <td>Mayor o igual que</td>
+                  <td><code>var2 &gt;= var1</code></td>
+                  <td><code>true</code></td>
+                </tr>
+                <tr>
+                  <td>&lt;=</td>
+                  <td>Menor o igual que</td>
+                  <td><code>var2 &lt;= var1</code></td>
+                  <td><code>false</code></td>
+                </tr>
+            </table>
+          </section>
+        </section>
+
+        <section>
           <h3>Estructuras de control</h3>
-        </article>
+        </section>
 
-        <article>
+        <section>
           <h2>Funciones</h2>
-        </article>
+        </section>
 
-        <article>
+        <section>
           <h2>DOM</h2>
-        </article>
+        </section>
 
-        <article>
+        <section>
           <h2>Peticiones HTTP</h2>
-        </article>
-      </section>
+        </section>
+      </article>
 
-      <section class="jquery">
+      <article class="jquery">
         <h2>jQuery</h2>
         <img
           src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/null/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-color-tal-revivo.png"
         />
-        <article></article>
-      </section>
+        <section></section>
+      </article>
 
-      <section class="react">
+      <article class="react">
         <h2>ReactJS</h2>
         <img
           src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/null/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
         />
-        <article>
+        <section>
           <h3>Herramientas para React</h3>
-        </article>
-      </section>
+        </section>
+      </article>
     </main>
     <footer>
       <p>Por Alexander Reyes con 💙</p>
