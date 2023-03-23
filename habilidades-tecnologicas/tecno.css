@@ -11,7 +11,7 @@ body {
 }
 
 main {
-  width: 800px;
+  width: 900px;
   height: 100%;
   display: grid;
   margin: 0 auto;
@@ -76,7 +76,7 @@ article:nth-child(even) {
   
 }
 
-.grafico-web > img {
+.grafico-web > img, section > figure > img {
   width: 100%;
 }
 

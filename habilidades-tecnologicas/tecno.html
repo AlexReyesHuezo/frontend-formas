@@ -148,6 +148,7 @@ console.log(`Haz ${bar} ${foo}`);</code></pre>
             <h4>Operadores aritméticos</h4>
             <p>
               Los operadores aritméticos toman valores numéricos (ya sean literales o variables) como sus operandos y devuelven un solo valor numérico.
+            </p>
               <table>
                 <thead>
                   <tr>
@@ -208,7 +209,6 @@ console.log(`Haz ${bar} ${foo}`);</code></pre>
                     <td><code>2</code></td>
                   </tr>
               </table>
-            </p>
           </section>
 
           <section>
@@ -309,7 +309,9 @@ console.log(`Haz ${bar} ${foo}`);</code></pre>
 
           <section>
             <h4>Operadores de igualdad</h4>
-            <p>El resultado de evaluar un operador de igualdad siempre es de tipo Boolean basado en si la comparación es verdadera.</p>
+            <p>
+              El resultado de evaluar un operador de igualdad siempre es de tipo Boolean basado en si la comparación es verdadera.
+            </p>
             <table>
               <thead>
                 <tr>
@@ -374,6 +376,135 @@ console.log(`Haz ${bar} ${foo}`);</code></pre>
 
         <section>
           <h3>Estructuras de control</h3>
+          <p>
+            Las estructuras de control dirigen la ejecución de las instrucciones de un programa disciplinadamente, en vez de saltar de un sitio a otro de forma arbitraria o impredecible. Solo tienen un punto de entrada y uno de salida. Hay tres tipos de estructuras de control: secuenciales, condicionales y repetitivas; estas en conjunto funda la base de la programación estructurada.
+          </p>
+          <figure>
+            <img src="./img/estructuras-de-control.jpg" alt="Estructuras de control: programación estructurada">
+            <figcaption>Estructuras de control</figcaption>
+          </figure>
+
+          <div class="code-chunk">
+            <p>
+              Script que captura dos números y determina el mayor de ellos.
+            </p>
+<pre>
+<code class="language-javascript line-numbers">let primerNumero = Number(prompt("Ingresa el primer número"));
+let segundoNumero = Number(prompt("Ingresa el segundo número"));
+
+if (primerNumero > segundoNumero) {
+  alert(`El ${primerNumero} es mayor que el ${segundoNumero}`);
+} else if (primerNumero < segundoNumero) {
+  alert(`El ${segundoNumero} es mayor que el ${primerNumero}`);
+} else {
+  alert("Los números son iguales");
+}</code></pre>
+
+            <a href="./javascript/intro/condicionales/mayorMenor.html" target="_blank" rel="noopener noreferrer">Mayor o menor</a>
+          </div>
+
+          <div class="code-chunk">
+            <p>
+              Script que captura un número y determina si es par o impar.
+            </p>
+<pre>
+<code class="language-javascript line-numbers">let numero = Number(prompt("Ingresa un número"));
+
+numero % 2 == 0
+  ? alert(`El ${numero} es par`)
+  : alert(`El ${numero} es impar`);</code></pre>
+
+            <a href="./javascript/intro/condicionales/mayorMenor.html" target="_blank" rel="noopener noreferrer">Par impar</a>
+          </div>
+
+          <div class="code-chunk">
+            <p>
+              Script que determina si un año es bisiesto.
+            </p>
+
+<pre>
+<code class="language-javascript line-numbers">
+let anio = Number(prompt("Ingresa un año"));
+
+  (anio % 4 == 0 && anio % 100 != 0) || anio % 400 == 0
+    ? alert(`El ${anio} es bisiesto`)
+    : alert(`El ${anio} no es bisiesto`);
+</code></pre>
+
+            <a href="./javascript/intro/condicionales/bisiesto.html" target="_blank" rel="noopener noreferrer">Año bisiesto</a>
+          </div>
+
+          <div class="code-chunk">
+            <p>
+              Script que determina el mayor de tres números.
+            </p>
+
+<pre>
+<code class="language-javascript line-numbers">
+let primerNumero = Number(prompt("Ingresa el primer número"));
+let segundoNumero = Number(prompt("Ingresa el segundo número"));
+let tercerNumero = Number(prompt("Ingresa el tercer número"));
+
+if (primerNumero > segundoNumero && primerNumero > tercerNumero) {
+  alert(
+    `El ${primerNumero} es mayor que el ${segundoNumero} y el ${tercerNumero}`
+  );
+} else if (segundoNumero > primerNumero && segundoNumero > tercerNumero) {
+  alert(
+    `El ${segundoNumero} es mayor que el ${primerNumero} y el ${tercerNumero}`
+  );
+} else if (tercerNumero > primerNumero && tercerNumero > segundoNumero) {
+  alert(
+    `El ${tercerNumero} es mayor que el ${primerNumero} y el ${segundoNumero}`
+  );
+} else {
+  alert("Los números son iguales");
+}
+</code>
+</pre>
+
+            <a href="./javascript/intro/condicionales/mayorDe3.html" target="_blank" rel="noopener noreferrer">El mayo de 3 números</a>
+          </div>
+
+          <div class="code-chunk">
+            <p>
+              Script que presenta un día de la semana a partir de un número asociado.
+            </p>
+
+<pre>
+<code class="language-javascript line-numbers">
+let dia = Number(prompt("Ingresa un número del 1 al 7"));
+
+switch (dia) {
+  case 1:
+    alert("Lunes");
+    break;
+  case 2:
+    alert("Martes");
+    break;
+  case 3:
+    alert("Miércoles");
+    break;
+  case 4:
+    alert("Jueves");
+    break;
+  case 5:
+    alert("Viernes");
+    break;
+  case 6:
+    alert("Sábado");
+    break;
+  case 7:
+    alert("Domingo");
+    break;
+  default:
+    alert("El número no corresponde a un día de la semana");
+}
+</code>
+</pre>
+
+            <a href="./javascript/intro/condicionales/semana.html" target="_blank" rel="noopener noreferrer">Día de la semana</a>
+          </div>
         </section>
 
         <section>
@@ -402,11 +533,41 @@ console.log(`Haz ${bar} ${foo}`);</code></pre>
         <img
           src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/null/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
         />
+
+        <section>
+          <h3>Recursos básicos (NodeJS)</h3>
+        </section>
+        
         <section>
           <h3>Herramientas para React</h3>
         </section>
+        
+        <section>
+          <h3>Prototypes</h3>
+        </section>
+
+        <section>
+          <h3>Default props</h3>
+        </section>
+
+        <section>
+          <h3>Hooks</h3>
+        </section>
+
+        <section>
+          <h3>useContext</h3>
+        </section>
+
+        <section>
+          <h3>Redux</h3>
+        </section>
+
+        <section>
+          <h3>Autenticación y autorización</h3>
+        </section>
       </article>
     </main>
+
     <footer>
       <p>Por Alexander Reyes con 💙</p>
     </footer>
