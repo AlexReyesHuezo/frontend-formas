@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Número primo</title>
+  </head>
+  <body>
+    <script>
+      let numero = Number(prompt("Ingresa un número y te diré si es primo: "));
+      let contador = 0;
+
+      for (let item = 1; item <= numero; item++) {
+        if (numero % item == 0) {
+          contador++;
+        }
+      }
+
+      if (contador == 2) {
+        alert(`El número ${numero} es primo`);
+      } else {
+        alert(`El número ${numero} no es primo`);
+      }
+    </script>
+  </body>
+</html>

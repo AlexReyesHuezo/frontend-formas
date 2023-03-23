@@ -384,7 +384,7 @@ console.log(`Haz ${bar} ${foo}`);</code></pre>
             <figcaption>Estructuras de control</figcaption>
           </figure>
 
-          <div class="code-chunk">
+          <div class="code-chunk condition">
             <p>
               Script que captura dos números y determina el mayor de ellos.
             </p>
@@ -403,7 +403,7 @@ if (primerNumero > segundoNumero) {
             <a href="./javascript/intro/condicionales/mayorMenor.html" target="_blank" rel="noopener noreferrer">Mayor o menor</a>
           </div>
 
-          <div class="code-chunk">
+          <div class="code-chunk condition">
             <p>
               Script que captura un número y determina si es par o impar.
             </p>
@@ -417,7 +417,7 @@ numero % 2 == 0
             <a href="./javascript/intro/condicionales/mayorMenor.html" target="_blank" rel="noopener noreferrer">Par impar</a>
           </div>
 
-          <div class="code-chunk">
+          <div class="code-chunk condition">
             <p>
               Script que determina si un año es bisiesto.
             </p>
@@ -434,7 +434,7 @@ let anio = Number(prompt("Ingresa un año"));
             <a href="./javascript/intro/condicionales/bisiesto.html" target="_blank" rel="noopener noreferrer">Año bisiesto</a>
           </div>
 
-          <div class="code-chunk">
+          <div class="code-chunk condition">
             <p>
               Script que determina el mayor de tres números.
             </p>
@@ -466,7 +466,7 @@ if (primerNumero > segundoNumero && primerNumero > tercerNumero) {
             <a href="./javascript/intro/condicionales/mayorDe3.html" target="_blank" rel="noopener noreferrer">El mayo de 3 números</a>
           </div>
 
-          <div class="code-chunk">
+          <div class="code-chunk condition">
             <p>
               Script que presenta un día de la semana a partir de un número asociado.
             </p>
@@ -505,6 +505,113 @@ switch (dia) {
 
             <a href="./javascript/intro/condicionales/semana.html" target="_blank" rel="noopener noreferrer">Día de la semana</a>
           </div>
+
+          <div class="code-chunk loop">
+            <p>
+              Script que presenta la tabla de multiplicación de cierto número.
+            </p>
+
+<pre>
+<code class="language-javascript line-numbers">
+let numero = Number(
+  prompt("Ingresa un número y te mostraré su tabla de multiplicación: ")
+);
+let resultado = 0;
+
+for (let item = 1; item <= 10; item++) {
+  resultado = numero * item;
+  alert(`${numero} x ${item} = ${resultado}`);
+}
+</code>
+</pre>
+
+            <a href="./javascript/intro/ciclos/productoX.html" target="_blank" rel="noopener noreferrer">Tabla de multiplicación</a>
+          </div>
+
+          <div class="code-chunk loop">
+            <p>
+              Script que determina si un número es perfecto.
+            </p>
+
+<pre>
+<code class="language-javascript line-numbers">
+let numero = Number(
+  prompt("Ingresa un número y te diré si es perfecto: ")
+);
+let suma = 0;
+let resultado = 0;
+
+for (let item = 1; item < numero; item++) {
+  if (numero % item == 0) {
+    suma += item;
+  }
+}
+
+if (suma == numero) {
+  alert(`El número ${numero} es perfecto`);
+} else {
+  alert(`El número ${numero} no es perfecto`);
+}
+</code>
+</pre>
+
+            <a href="./javascript/intro/ciclos/numeroPerfecto.html" target="_blank" rel="noopener noreferrer">Numero perfecto</a>
+          </div>
+
+          <div class="code-chunk loop">
+            <p>
+              Script que haga el producto de 2 número con el algoritmo de multiplicación ruso.
+            </p>
+
+<pre>
+<code class="language-javascript line-numbers">
+let numero1 = Number(prompt("Ingresa el primer número: "));
+let numero2 = Number(prompt("Ingresa el segundo número: "));
+let resultado = 0;
+
+while (numero1 > 0) {
+  if (numero1 % 2 == 0) {
+    numero1 = numero1 / 2;
+    numero2 = numero2 * 2;
+  } else {
+    numero1 = numero1 - 1;
+    resultado = resultado + numero2;
+  }
+}
+
+alert(`El resultado de la multiplicación es: ${resultado}`);
+</code>
+</pre>
+
+            <a href="./javascript/intro/ciclos/algoritmoRuso.html" target="_blank" rel="noopener noreferrer">Algoritmo de multiplicación ruso</a>
+          </div>
+
+          <div class="code-chunk loop">
+            <p>
+              Script que determina si un número es primo.
+            </p>
+
+<pre>
+<code class="language-javascript line-numbers">
+let numero = Number(prompt("Ingresa un número y te diré si es primo: "));
+let contador = 0;
+
+for (let item = 1; item <= numero; item++) {
+  if (numero % item == 0) {
+    contador++;
+  }
+}
+
+if (contador == 2) {
+  alert(`El número ${numero} es primo`);
+} else {
+  alert(`El número ${numero} no es primo`);
+}
+</code>
+</pre>
+
+            <a href="./javascript/intro/ciclos/primo.html" target="_blank" rel="noopener noreferrer">Número primo</a>
+          </div>
         </section>
 
         <section>
@@ -539,7 +646,7 @@ switch (dia) {
         </section>
         
         <section>
-          <h3>Herramientas para React</h3>
+          <h3>Estructura de carpetas en React</h3>
         </section>
         
         <section>

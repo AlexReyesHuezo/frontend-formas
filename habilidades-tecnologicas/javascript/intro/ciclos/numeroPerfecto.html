@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Número perfecto</title>
+  </head>
+  <body>
+    <script>
+      let numero = Number(
+        prompt("Ingresa un número y te diré si es perfecto: ")
+      );
+      let suma = 0;
+      let resultado = 0;
+
+      for (let item = 1; item < numero; item++) {
+        if (numero % item == 0) {
+          suma += item;
+        }
+      }
+
+      if (suma == numero) {
+        alert(`El número ${numero} es perfecto`);
+      } else {
+        alert(`El número ${numero} no es perfecto`);
+      }
+    </script>
+  </body>
+</html>
